@@ -1,6 +1,14 @@
-function loginSimples() {
-    window.location.href = "/sites/login/index.html"
-}
+let logSlink = document.querySelector("#loginsimples").addEventListener("click", function () {
+    window.location.href = 'sites/login/index.html'
+})
+
+let aprelink = document.querySelector("#apresespa").addEventListener("click", function () {
+    window.location.href = 'sites/espanha-atv-main/html/index.html'
+});
+
+
+
+
 
 function insta() {
     window.location.href = 'https://www.instagram.com/pedro_rzara/'
