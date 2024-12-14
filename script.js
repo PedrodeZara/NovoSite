@@ -6,16 +6,12 @@ let aprelink = document.querySelector("#apresespa").addEventListener("click", fu
     window.location.href = 'sites/espanha-atv-main/html/index.html'
 });
 
-
-
-
+let gitlink = document.querySelector(".git").addEventListener("click", function () {
+     window.location.href = 'https://github.com/PedrodeZara'
+})
 
 function insta() {
     window.location.href = 'https://www.instagram.com/pedro_rzara/'
-}
-
-function git() {
-    window.location.href = 'https://github.com/PedrodeZara'
 }
 
 function linke() {
