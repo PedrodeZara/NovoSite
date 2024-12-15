@@ -425,6 +425,26 @@ button a {
         }
         
     }
+
+    .visu {
+        flex-direction: column;
+        overflow-x: scroll;
+    }
+
+    .vermais {
+        display: none;
+    }
+
+    ::-webkit-scrollbar {
+        height: 10px;
+        background-color: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(255, 38, 0);
+        cursor:grab;
+    }
+    
     
     .bemvin {
         & h1 {
@@ -496,6 +516,4 @@ button a {
            }
         }
     }
-
-        
 }
