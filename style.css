@@ -98,7 +98,7 @@ header {
         bottom: 200px;
         cursor: pointer;
         display: flex;
-        flex-direction: column;
+        flex-direction: column;        
     }
 }
 
@@ -254,14 +254,25 @@ li:hover::after {
 
        & .insta {
         width: 80px;
+        -webkit-box-reflect: below -20px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+        filter: drop-shadow(0px 0px 5px #8a8a8a);
+
        }
 
        & .git {
         width: 60px;
+        -webkit-box-reflect: below 5px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+        filter: drop-shadow(0px 0px 5px #8a8a8a);
+
+
        }
 
        & .linke {
         width: 80px;
+        -webkit-box-reflect: below 5px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+        filter: drop-shadow(0px 0px 5px #8a8a8a);
+
+
        }
     }
 }
@@ -315,7 +326,14 @@ button a {
     
     & img {
         width: 300px;
+        animation: brilho 5s infinite ;
     }
+}
+
+@keyframes  brilho {
+    0% {filter: drop-shadow(0px 0px 20px #000000);}
+    50% {filter: drop-shadow(0px 0px 20px #d6d6d6);}
+    100% {filter: drop-shadow(0px 0px 20px #000000);}
 }
 
 .h2sitesexemplos h2 {
