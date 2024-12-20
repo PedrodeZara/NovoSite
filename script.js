@@ -10,13 +10,13 @@ let gitlink = document.querySelector(".git").addEventListener("click", function 
      window.location.href = 'https://github.com/PedrodeZara'
 })
 
-function insta() {
+let instalink = document.querySelector(".insta").addEventListener("click", function () {
     window.location.href = 'https://www.instagram.com/pedro_rzara/'
-}
+})
 
-function linke() {
+let linkelink = document.querySelector(".linke").addEventListener("click", function () {
     window.location.href = 'https://www.linkedin.com/in/pedro-zara-25a94b322/'
-}
+})
 
 function vermais() {
     let alt = document.querySelector(".visu");
