@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100dvh;
+    background-color: #1b1b1b;
+    color: #ffff;
+    font-family: Poppins;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    background-color: #272727;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 10px #000;
+
+    & img {
+        width: 70px;
+        height: 70px;
+        background-color: #ffff;
+    }
+
+    & nav {
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+
+        & a {
+            text-decoration: none;
+            color: #ffff;
+            cursor: pointer;
+        }
+    }
+}
+
+.princi {
+    display: flex;
+    width: 100vw;
+    overflow-x: hidden;
+    height: 100vh;
+    gap: 50px;
+    margin: 200px 50px 50px 50px;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
