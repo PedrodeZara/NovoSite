@@ -85,6 +85,7 @@ header {
     & p {
         animation: aparecer 3s;
         animation-delay: -0.5s;
+        position: relative;
     }
 
     & button {
@@ -99,6 +100,24 @@ header {
         cursor: pointer;
         display: flex;
         flex-direction: column;        
+    }
+}
+
+strong {
+    animation: aed infinite 2s;
+    position: absolute;
+    right: -80px;
+}
+
+@keyframes aed {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(-20deg) scale(2);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
     }
 }
 
@@ -313,6 +332,7 @@ button a {
     margin:400px 50px 400px 50px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
     & h2 {
         font-size: 30px;
@@ -325,7 +345,8 @@ button a {
     }
     
     & img {
-        width: 300px;
+        width: 400px;
+        height: 400px;
         animation: brilho 5s infinite ;
     }
 }
@@ -336,19 +357,63 @@ button a {
     100% {filter: drop-shadow(0px 0px 20px #000000);}
 }
 
-.h2sitesexemplos h2 {
-    text-align: center;
-    font-size: 70px;
-    margin-bottom: 50px;
-    background-image: linear-gradient(45deg, rgb(255, 0, 0), rgb(38, 0, 255));
-    background-clip: text;
-    color: #ffffff00;
+.anteh2 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .h2sitesexemplos {
     display: flex;
     width: 100vw;
     justify-content: center;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 100px;
+    position: relative;
+}
+
+.si_ani {
+    display: flex;
+    gap: 2px;
+    font-size: 70px;
+    font-weight: 500;
+    color: #c5c5c5;
+    position: absolute;
+    left: 0;
+}
+
+.exe_ani {
+    display: flex;
+    gap: 2px;
+    font-size: 70px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: #c5c5c5;
+    position: absolute;
+    right: 0;
+}
+
+.p1 {animation: cimabaixop infinite 2s 0s;}
+.p2 {animation: cimabaixop infinite 2s 0.2s;}
+.p3 {animation: cimabaixop infinite 2s 0.4s;}
+.p4 {animation: cimabaixop infinite 2s 0.6s;}
+.p5 {animation: cimabaixop infinite 2s 0.8s;}
+.p6 {animation: cimabaixop infinite 2s 1s;}
+.p7 {animation: cimabaixop infinite 2s 1.2s;}
+.p8 {animation: cimabaixop infinite 2s 1.4s;}
+.p9 {animation: cimabaixop infinite 2s 1.6s;}
+.p10 {animation: cimabaixop infinite 2s 1.8s;}
+.p11 {animation: cimabaixop infinite 2s 2s;}
+.p12 {animation: cimabaixop infinite 2s 2.2s;}
+.p13 {animation: cimabaixop infinite 2s 2.4s;}
+.p14 {animation: cimabaixop infinite 2s 2.6s;}
+
+@keyframes cimabaixop {
+    0% { margin: 0px 0px 0px 0px; color: #c5c5c5;}
+    50% { margin: -20px 0px 0px 0px; text-shadow: 0px 0px 20px #fff; color: #fff;}
+    100% { margin: 0px 0px 0px 0px; color: #c5c5c5;}
+
 }
 
 @media screen and (max-width: 1000px) and (min-width: 750px) {
@@ -477,6 +542,13 @@ button a {
         }
     }
 
+    strong {
+        position: absolute;
+        right: 0px;
+        left: 0;
+        bottom: -30px;
+    }
+
     .principal {
         align-items: center;
         flex-direction: column;
@@ -490,6 +562,23 @@ button a {
             width: 200px;
             height: 200px;
         }
+    }
+
+    .h2sitesexemplos {
+        height: 200px;
+        position: relative;
+    }
+    
+    .si_ani {
+        top: 0;
+        left: 20px;
+        right: 0;
+    }
+    
+    .exe_ani {
+        bottom: 0;
+        left: 0px;
+        right: 0;
     }
 
     .h2sitesexemplos h2 {
