@@ -18,6 +18,10 @@ let linkelink = document.querySelector(".linke").addEventListener("click", funct
     window.location.href = 'https://www.linkedin.com/in/pedro-zara-25a94b322/'
 })
 
+let carrolink = document.querySelector("#carrossel").addEventListener("click", function () {
+    window.location.href = 'sites/landing-page/index.html';
+})
+
 function vermais() {
     let alt = document.querySelector(".visu");
     let arrow = document.getElementById("img");

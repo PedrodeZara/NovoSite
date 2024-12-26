@@ -1,93 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     height: 100dvh;
-    background-color: #1b1b1b;
-    color: #ffff;
-    font-family: Poppins;
-    overflow-x: hidden;
+    flex-direction: column;
+
 }
 
-header {
+.img {
+    width: 500px;
+    height: 500px;
     display: flex;
-    width: 100vw;
-    background-color: #272727;
-    height: 100px;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 10px #000;
-
-    & img {
-        width: 70px;
-        height: 70px;
-        background-color: #ffff;
-    }
-
-    & nav {
-        display: flex;
-        gap: 20px;
-        font-size: 20px;
-
-        & a {
-            text-decoration: none;
-            color: #ffff;
-            cursor: pointer;
-        }
-    }
+    position: relative;
+    overflow: hidden;
 }
 
-.princi {
+#imgtda {
     display: flex;
-    width: 100vw;
-    overflow-x: hidden;
-    height: 600px;
-    gap: 50px;
-    margin: 300px 0px 100px 0px;
-    justify-content: space-around;
-
-    & div h1 {
-        text-align: center;
-        font-size: 50px;
-    }
-
-    & div p {
-        width: 500px;
-        text-align: justify;
-    }
-
-    & .imagens {
-        width: 500px;
-        height: 500px;
-        overflow: hidden ;
-        display: flex;
-
-        & div {
-            animation: imagen 20s infinite;
-            display: flex;
-        }
-    }
-
-    & img {
-        
-    }
+    justify-content: initial;
+    position: absolute;
+    left: 0;
+    
 }
 
-@keyframes imagen {
-    0% {margin-right:0;}
-    20% {margin-right:-500px;}
-    40% {margin-right:-1000px;}
-    60% {margin-right:-1500px;}
-    80% {margin-right:-2000px;}
-    100% {margin-left:-2500px;}
-}
- 
 img {
     width: 500px;
     height: 500px;
 }
+
+.buttons {
+    margin-top: 50px;
+}
+
+button {
+    background-color: #cccccc;
+    border: none;
+    width: 150px;
+    height: 50px;
+    font-size:40px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+ button:hover {
+    box-shadow: 0px 10px 10px rgb(136, 136, 136);
+    transition: 0.2s;
+    transform: scale(1.2);
+    background-color: #000;
+ }
+
+ button:active {
+    transform: scale(0.9999999);
+    color: #000;
+    border: #000 1px solid;
+    background-color: #fff;
+ }
